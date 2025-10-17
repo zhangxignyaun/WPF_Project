@@ -1,0 +1,26 @@
+2025-09-16 20:04:23,774 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-09-16 20:04:23,794 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-09-16 20:04:23,796 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Software\develop\net\Project\DailyApp\DailyAPI\
+2025-09-16 20:04:40,651 [13] WARN  LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 20:04:41,072 [13] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.9 initialized 'DailyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2025-09-16 20:04:41,623 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (38ms) [Parameters=[@__account_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountId], [a].[Account], [a].[Name], [a].[Password]
+FROM [Accounttb] AS [a]
+WHERE [a].[Account] = @__account_0
+2025-09-16 20:05:29,757 [13] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.9 initialized 'DailyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2025-09-16 20:05:29,769 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__account_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountId], [a].[Account], [a].[Name], [a].[Password]
+FROM [Accounttb] AS [a]
+WHERE [a].[Account] = @__account_0
+2025-09-16 20:06:03,681 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-09-16 20:06:03,705 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-09-16 20:06:03,706 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Software\develop\net\Project\DailyApp\DailyAPI\
+2025-09-16 20:06:11,262 [13] WARN  LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 20:06:11,285 [13] INFO  DailyAPI.Controllers.AccountController - 用户111登录....
+2025-09-16 20:06:11,643 [13] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.9 initialized 'DailyDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2025-09-16 20:06:12,097 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (35ms) [Parameters=[@__account_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountId], [a].[Account], [a].[Name], [a].[Password]
+FROM [Accounttb] AS [a]
+WHERE [a].[Account] = @__account_0
+2025-09-16 20:13:22,387 [6] WARN  LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 20:13:22,404 [6] INFO  DailyAPI.Controllers.AccountController - 用户111登录....

@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DailyAPI</name>
+    </assembly>
+    <members>
+        <member name="P:DailyAPI.ApiResponses.ApiResponse.ResultCode">
+            <summary>
+            结果编码
+            </summary>
+        </member>
+        <member name="P:DailyAPI.ApiResponses.ApiResponse.Msg">
+            <summary>
+            结果信息
+            </summary>
+        </member>
+        <member name="P:DailyAPI.ApiResponses.ApiResponse.ResultData">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="T:DailyAPI.AutoMappers.AutoMapperSetting">
+            <summary>
+            model之间的转换设置
+            </summary>
+        </member>
+        <member name="M:DailyAPI.AutoMappers.AutoMapperSetting.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:DailyAPI.Controllers.AccountController">
+            <summary>
+            账户接口
+            </summary>
+        </member>
+        <member name="F:DailyAPI.Controllers.AccountController.db">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="F:DailyAPI.Controllers.AccountController.mapper">
+            <summary>
+            automapper
+            </summary>
+        </member>
+        <member name="M:DailyAPI.Controllers.AccountController.Reg(DailyAPI.DTOs.AccountInfoDTO)">
+            <summary>
+            注册
+            </summary>
+            <param name="accountInfoDTO">注册信息</param>
+            <returns>1:注册成功,-1:账号已存在,-99:未知错误</returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.AccountController.Login(System.String,System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="account"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DailyAPI.Controllers.MemoController">
+            <summary>
+            备忘录接口
+            </summary>
+        </member>
+        <member name="F:DailyAPI.Controllers.MemoController._db">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="M:DailyAPI.Controllers.MemoController.StatMemo">
+            <summary>
+            备忘录统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.MemoController.AddMemo(DailyAPI.DTOs.MemoDTO)">
+            <summary>
+            添加备忘录
+            </summary>
+            <param name="memoDTO"></param>
+            <returns>1：添加成功；-99：服务器异常</returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.MemoController.QueryMemo(System.String)">
+            <summary>
+            备忘录数据查询
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.MemoController.DeleteMemo(System.Int32)">
+            <summary>
+            删除备忘录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.WaitController.#ctor(DailyAPI.DataModel.DailyDBContext,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{DailyAPI.Controllers.WaitController})">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:DailyAPI.Controllers.WaitController._db">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="M:DailyAPI.Controllers.WaitController.StatWait">
+            <summary>
+            统计待办事项
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.WaitController.AddWait(DailyAPI.DTOs.WaitDTO)">
+            <summary>
+            添加代办事项
+            </summary>
+            <param name="waitDTO"></param>
+            <returns>1:添加成功; -1:添加失败;  -99:服务器异常</returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.WaitController.GetWaitTodo">
+            <summary>
+            获取代办状态的所有待办事项
+            </summary>
+            <returns>1;获取成功；-1:获取失败;-99:服务器异常</returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.WaitController.UpdateWaitStatus(DailyAPI.DTOs.WaitDTO)">
+            <summary>
+            编辑修改待办事项
+            </summary>
+            <param name="waitDTO"></param>
+            <returns>1:修改成功；-1:id不存在；-99:服务器异常</returns>
+        </member>
+        <member name="M:DailyAPI.Controllers.WaitController.QueryWait(System.String,System.Nullable{System.Int32})">
+            <summary>
+            待办查询
+            </summary>
+            <param name="title">标题(模糊查询)</param>
+            <param name="status">状态(等值查询)</param>
+            <returns>1：查询成功；-99：服务器异常</returns>
+        </member>
+        <member name="T:DailyAPI.DataModel.AccountInfo">
+            <summary>
+            登陆账号数据模型
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.AccountInfo.AccountId">
+            <summary>
+            账号ID
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.AccountInfo.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.AccountInfo.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.AccountInfo.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.DailyDBContext.accountInfos">
+            <summary>
+            账号信息
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.DailyDBContext.WaitInfo">
+            <summary>
+            待办事项
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.DailyDBContext.MemoInfo">
+            <summary>
+            备忘录
+            </summary>
+        </member>
+        <member name="T:DailyAPI.DataModel.MemoInfo">
+            <summary>
+            备忘录数据模型
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.MemoInfo.MemoId">
+            <summary>
+            备忘事项id
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.MemoInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.MemoInfo.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.MemoInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:DailyAPI.DataModel.WaitInfo">
+            <summary>
+            待办事项数据模型
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.WaitInfo.WaitId">
+            <summary>
+            待办事项id
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.WaitInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.WaitInfo.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.WaitInfo.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DataModel.WaitInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:DailyAPI.DTOs.AccountInfoDTO">
+            <summary>
+            账号DTO,用来接收注册信息
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.AccountInfoDTO.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.AccountInfoDTO.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.AccountInfoDTO.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.MemoDTO.MemoId">
+            <summary>
+            备忘事项id
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.MemoDTO.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.MemoDTO.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="T:DailyAPI.DTOs.StatWaitDTO">
+            <summary>
+            统计待办事项DTO
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.StatWaitDTO.TotleCount">
+            <summary>
+            代办总数
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.StatWaitDTO.FinishCount">
+            <summary>
+            已完成数量
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.StatWaitDTO.FinishPercent">
+            <summary>
+            完成比例
+            </summary>
+        </member>
+        <member name="T:DailyAPI.DTOs.WaitDTO">
+            <summary>
+            待办事项DTO(接收主页待办事项添加数据)
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.WaitDTO.WaitId">
+            <summary>
+            待办事项id
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.WaitDTO.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.WaitDTO.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:DailyAPI.DTOs.WaitDTO.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+    </members>
+</doc>

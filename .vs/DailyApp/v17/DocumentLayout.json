@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Software\\develop\\net\\Project\\DailyApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\mainwin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\mainwin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\dialog\\addwaitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\dialog\\addwaitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\service\\idialoghostaware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\service\\idialoghostaware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\homeucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\homeucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\dialog\\editwaitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\dialog\\editwaitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddWaitUCViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvzgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:26:29.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWin.xaml",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\MainWin.xaml",
+              "RelativeDocumentMoniker": "DailyApp\\Views\\MainWin.xaml",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\MainWin.xaml",
+              "RelativeToolTip": "DailyApp\\Views\\MainWin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T02:34:05.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditWaitUCViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\Dialog\\EditWaitUCViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\Dialog\\EditWaitUCViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\Dialog\\EditWaitUCViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\Dialog\\EditWaitUCViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:34:02.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeUCViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAEwOEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:22:40.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDialogHostAware.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Service\\IDialogHostAware.cs",
+              "RelativeDocumentMoniker": "DailyApp\\Service\\IDialogHostAware.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Service\\IDialogHostAware.cs",
+              "RelativeToolTip": "DailyApp\\Service\\IDialogHostAware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:18:47.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

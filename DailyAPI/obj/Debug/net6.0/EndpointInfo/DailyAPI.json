@@ -1,0 +1,435 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DailyAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Account/Reg": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "注册",
+        "requestBody": {
+          "description": "注册信息",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountInfoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountInfoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountInfoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Account/Login": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "登录",
+        "parameters": [
+          {
+            "name": "account",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Memo/StatMemo": {
+      "get": {
+        "tags": [
+          "Memo"
+        ],
+        "summary": "备忘录统计",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Memo/AddMemo": {
+      "post": {
+        "tags": [
+          "Memo"
+        ],
+        "summary": "添加备忘录",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Memo/QueryMemo": {
+      "get": {
+        "tags": [
+          "Memo"
+        ],
+        "summary": "备忘录数据查询",
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Memo/DeleteMemo": {
+      "delete": {
+        "tags": [
+          "Memo"
+        ],
+        "summary": "删除备忘录信息",
+        "parameters": [
+          {
+            "name": "memoId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Wait/StatWait": {
+      "get": {
+        "tags": [
+          "Wait"
+        ],
+        "summary": "统计待办事项",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Wait/AddWait": {
+      "post": {
+        "tags": [
+          "Wait"
+        ],
+        "summary": "添加代办事项",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WaitDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WaitDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WaitDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Wait/GetWaitTodo": {
+      "get": {
+        "tags": [
+          "Wait"
+        ],
+        "summary": "获取代办状态的所有待办事项",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Wait/UpdateWaitStatus": {
+      "put": {
+        "tags": [
+          "Wait"
+        ],
+        "summary": "编辑修改待办事项",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WaitDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WaitDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WaitDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Wait/QueryWait": {
+      "get": {
+        "tags": [
+          "Wait"
+        ],
+        "summary": "待办查询",
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "description": "标题(模糊查询)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "状态(等值查询)",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccountInfoDTO": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "姓名",
+            "nullable": true
+          },
+          "account": {
+            "type": "string",
+            "description": "账号",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "description": "密码",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "账号DTO,用来接收注册信息"
+      },
+      "MemoDTO": {
+        "type": "object",
+        "properties": {
+          "memoId": {
+            "type": "integer",
+            "description": "备忘事项id",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "description": "标题",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "description": "内容",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WaitDTO": {
+        "type": "object",
+        "properties": {
+          "waitId": {
+            "type": "integer",
+            "description": "待办事项id",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "description": "标题",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "description": "内容",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "description": "状态",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "待办事项DTO(接收主页待办事项添加数据)"
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Account",
+      "description": "账户接口"
+    },
+    {
+      "name": "Memo",
+      "description": "备忘录接口"
+    }
+  ]
+}
