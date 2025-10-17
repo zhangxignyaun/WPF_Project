@@ -1,7 +1,7 @@
 ﻿namespace DailyAPI.DTOs
 {
     /// <summary>
-    /// 账号DTO,用来接收注册信息
+    /// 账号DTO,用来接收注册信息，git测试
     /// </summary>
     public class AccountInfoDTO
     {
