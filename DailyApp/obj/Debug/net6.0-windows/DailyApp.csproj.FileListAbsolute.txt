@@ -72,3 +72,4 @@ D:\Software\develop\net\Project\DailyApp\DailyApp\bin\Debug\net6.0-windows\Micro
 D:\Software\develop\net\Project\DailyApp\DailyApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
 D:\Software\develop\net\Project\DailyApp\DailyApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
 D:\Software\develop\net\Project\DailyApp\DailyApp\bin\Debug\net6.0-windows\Log4net.config
+D:\Software\develop\net\Project\DailyApp\DailyApp\obj\Debug\net6.0-windows\DailyApp.sourcelink.json

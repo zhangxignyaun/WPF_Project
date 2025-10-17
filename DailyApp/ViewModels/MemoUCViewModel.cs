@@ -19,8 +19,8 @@ namespace DailyApp.ViewModels
     {
 
         private readonly HttpResClient _httpClient;
-        private readonly ILogger<MemoUCViewModel> _logger;
-        public MemoUCViewModel(HttpResClient httpClient, ILogger<MemoUCViewModel> logger)
+        //private readonly ILogger<MemoUCViewModel> _logger;
+        public MemoUCViewModel(HttpResClient httpClient)
         {
             _httpClient = httpClient;
             QueryMemoList();
@@ -29,7 +29,7 @@ namespace DailyApp.ViewModels
             AddMemoCommand = new DelegateCommand(AddMemo);
             DeleteMemoCommand = new DelegateCommand<MemoInfoDTO>(DeleteMemo);
 
-            _logger = logger;
+           // _logger = logger;
         }
         private List<MemoInfoDTO> _MemoInfoList;
 
@@ -51,7 +51,7 @@ namespace DailyApp.ViewModels
 
         //}
 
-        #region 显示右侧添加代办
+        #region 显示右侧添加备忘录
 
         public DelegateCommand ShowRightMemoCommand { get; set; }
         private bool _IsShowRightMemo;
@@ -78,6 +78,11 @@ namespace DailyApp.ViewModels
 
         public void AddMemo()
         {
+            if (string.IsNullOrEmpty(MemoInfoDTO.Title) || string.IsNullOrEmpty(MemoInfoDTO.Content))
+            {
+                MessageBox.Show("添加失败：备忘录信息录入不全");
+                return;
+            }
             ApiRequest apiRequest = new ApiRequest();
             apiRequest.Method = RestSharp.Method.POST;
             apiRequest.Parameters = MemoInfoDTO;
@@ -88,7 +93,7 @@ namespace DailyApp.ViewModels
             {
                 QueryMemoList();//刷新列表
 
-                _logger.LogInformation("备忘录添加成功");
+               
                 IsShowRightMemo = false;//隐藏窗口
             }
             else

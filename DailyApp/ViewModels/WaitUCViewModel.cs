@@ -1,13 +1,17 @@
 ﻿using DailyApp.DTOs;
 using DailyApp.HttpClients;
+using DailyApp.MsgEvents;
 using log4net.Core;
 using Newtonsoft.Json;
 using Prism.Commands;
+using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,16 +23,16 @@ namespace DailyApp.ViewModels
     /// </summary>
     public class WaitUCViewModel : BindableBase, INavigationAware
     {
-        private readonly HttpResClient HttpClient;
-        
-        public WaitUCViewModel()
+        private readonly HttpResClient _httpClient;
+        private readonly IEventAggregator _eventAggregator;
+        public WaitUCViewModel(HttpResClient HttpClient, IEventAggregator EventAggregator)
         {
-            HttpClient = new HttpResClient();
-
+           _httpClient = HttpClient;
+            _eventAggregator = EventAggregator;
           
             ShowRightWaitCommand = new DelegateCommand(ShowrightWait);
             QueryWaitCommand = new DelegateCommand(QueryeWaitInfoList);
-
+            AddWaitCommand = new DelegateCommand(AddWait);
 
         }
         private List<WaitInfoDTO> _WaitInfoList;
@@ -81,7 +85,7 @@ namespace DailyApp.ViewModels
             apiRequest.Method = RestSharp.Method.GET;
 
             apiRequest.Route = $"Wait/QueryWait?title={SearchWaitText}&status={status}";
-            ApiResponse response = HttpClient.Excute(apiRequest);
+            ApiResponse response = _httpClient.Excute(apiRequest);
 
             if (response.ResultCode == 1)
             {
@@ -98,9 +102,9 @@ namespace DailyApp.ViewModels
         #region 显示右侧添加代办
 
         public DelegateCommand ShowRightWaitCommand { get; set; }
-        private string _IsShowRightWait;
+        private bool _IsShowRightWait;
 
-        public string IsShowRightWait
+        public bool IsShowRightWait
         {
             get { return _IsShowRightWait; }
             set
@@ -111,9 +115,48 @@ namespace DailyApp.ViewModels
         }
         public void ShowrightWait()
         {
-            IsShowRightWait = "True";
+            IsShowRightWait = true;
         }
 
+        #endregion
+
+        #region 添加待办事项
+        public WaitInfoDTO WaitInfoDTO { get; set; } = new WaitInfoDTO();
+
+        public DelegateCommand AddWaitCommand { get; set; }
+
+        public void AddWait()
+        {
+            if (string.IsNullOrEmpty(WaitInfoDTO.Title) || string.IsNullOrEmpty(WaitInfoDTO.Content))
+            {
+                MessageBox.Show("添加失败：待办事项信息录入不全");
+                return;
+            }
+            ApiRequest apiRequest = new ApiRequest();
+            apiRequest.Method = RestSharp.Method.POST;
+            apiRequest.Parameters = WaitInfoDTO;
+            apiRequest.Route = $"Wait/AddWait";
+
+            ApiResponse response = _httpClient.Excute(apiRequest);
+            if (response.ResultCode == 1)
+            {
+                QueryeWaitInfoList();//刷新列表
+
+                // 发布消息
+                if (WaitInfoDTO.Status ==0)
+                {
+                    //WaitInfoList.Add(WaitInfoDTO);
+                    //_eventAggregator.GetEvent<AddWaitMsgEvent>().Publish(WaitInfoDTO);
+                }
+                
+                IsShowRightWait = false;
+                
+            }
+            else
+            {
+                MessageBox.Show(response.Msg);
+            }
+        }
         #endregion
 
         #region 导航

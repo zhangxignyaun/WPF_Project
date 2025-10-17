@@ -25,7 +25,7 @@
                         DockPanel.Dock="Top"
                         Orientation="Horizontal">
                         <TextBlock VerticalAlignment="Center" Text="状态:" />
-                        <ComboBox Margin="10,2,0,0" SelectedIndex="0">
+                        <ComboBox Margin="10,2,0,0"  SelectedIndex="{Binding WaitInfoDTO.Status}">
                             <ComboBoxItem>待办</ComboBoxItem>
                             <ComboBoxItem>已完成</ComboBoxItem>
                         </ComboBox>
@@ -33,18 +33,21 @@
                     <TextBox
                         Margin="20"
                         md:HintAssist.Hint="请输入待办标题"
-                        DockPanel.Dock="Top" />
+                        DockPanel.Dock="Top" 
+                        Text="{Binding WaitInfoDTO.Title}"/>
                     <TextBox
                         MinHeight="100"
                         Margin="20"
                         md:HintAssist.Hint="请输入待办内容"
                         DockPanel.Dock="Top"
-                        TextWrapping="Wrap" />
+                        TextWrapping="Wrap" 
+                        Text="{Binding WaitInfoDTO.Content}"/>
 
                     <Button
                         HorizontalAlignment="Center"
                         Content="添加到待办"
-                        DockPanel.Dock="Top" />
+                        DockPanel.Dock="Top" 
+                        Command="{Binding AddWaitCommand}"/>
                 </DockPanel>
             </md:DrawerHost.RightDrawerContent>
 

@@ -82,3 +82,4 @@ D:\Software\develop\net\Project\DailyApp\DailyAPI\obj\Debug\net6.0\staticwebasse
 D:\Software\develop\net\Project\DailyApp\DailyAPI\bin\Debug\net6.0\log4net.dll
 D:\Software\develop\net\Project\DailyApp\DailyAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
 D:\Software\develop\net\Project\DailyApp\DailyAPI\bin\Debug\net6.0\Log4net.config
+D:\Software\develop\net\Project\DailyApp\DailyAPI\obj\Debug\net6.0\DailyAPI.sourcelink.json

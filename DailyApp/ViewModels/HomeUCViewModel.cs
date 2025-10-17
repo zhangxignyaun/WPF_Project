@@ -1,23 +1,25 @@
 ﻿using DailyApp.DTOs;
+using DailyApp.Extension;
 using DailyApp.HttpClients;
 using DailyApp.Models;
+using DailyApp.MsgEvents;
+using DailyApp.Service;
 using Newtonsoft.Json;
 using Prism.Commands;
+using Prism.Common;
 using Prism.DryIoc;
+using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Services.Dialogs;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.DirectoryServices;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DailyApp.Service;
 using System.Windows;
-using DailyApp.Extension;
-using Prism.Common;
-using System.Collections.ObjectModel;
 
 namespace DailyApp.ViewModels
 {
@@ -25,12 +27,14 @@ namespace DailyApp.ViewModels
     {
         private readonly HttpResClient httpResClient;
         private readonly DialogHostService dialogHostService;
-        public HomeUCViewModel(HttpResClient httpResClient, DialogHostService dialogHostService, IRegionManager regionManager)
+       
+        public HomeUCViewModel(HttpResClient httpResClient, DialogHostService dialogHostService, IRegionManager regionManager, IEventAggregator eventAggregator)
         {
             CreateStatPanelList();//统计面板
             this.httpResClient = httpResClient;
             GetWaitInfoList();//待办事项
             GetMemoInfoList();//备忘录  
+            
             NavigateCommand = new DelegateCommand<StatisPanel>(Navigate);
 
             this.dialogHostService = dialogHostService;
@@ -42,6 +46,8 @@ namespace DailyApp.ViewModels
             ShowAddMemoCommand = new DelegateCommand(ShowAddMemo);
             _RegionManager = regionManager;
             CallStatMemo();//统计备忘录
+            //订阅消息
+            //eventAggregator.GetEvent<AddWaitMsgEvent>().Subscribe(OnAddWaitInfo);
         }
         #region 统计面板数据
         private ObservableCollection<StatisPanel> _StatisPanelList;
@@ -95,7 +101,7 @@ namespace DailyApp.ViewModels
         #endregion
 
         #region 待办事项数据
-        private List<WaitInfoDTO> _WaitInfoList;
+        public List<WaitInfoDTO> _WaitInfoList;
 
         public List<WaitInfoDTO> WaitInfoList
         {
@@ -163,6 +169,8 @@ namespace DailyApp.ViewModels
                 LoginInfo = $"您好{loginName},今天是{now.ToString("yyyy-MM-dd")} {week[(int)now.DayOfWeek]}";
             }
             CallStatWait();
+            GetWaitInfoList();
+            GetMemoInfoList();
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -427,6 +435,13 @@ namespace DailyApp.ViewModels
             {
                 MemoInfoList = new List<MemoInfoDTO>();
             }
+        }
+        #endregion
+
+        #region 订阅消息后执行的方法
+        private void OnAddWaitInfo(WaitInfoDTO waitInfoDTO)
+        {
+            WaitInfoList.Add(waitInfoDTO);
         }
         #endregion
 

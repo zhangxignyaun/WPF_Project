@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\Software\\develop\\net\\Project\\DailyApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\mainwin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\mainwin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\homeucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\homeucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\loginuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\loginuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\mainwinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\mainwinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\loginuc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\loginuc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\dialog\\addwaitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\dialog\\addwaitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\personaluc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\personaluc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\viewmodels\\waitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\viewmodels\\waitucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\settinguc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\settinguc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\views\\homeuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\views\\homeuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{643A9528-905E-4BEF-8AD4-14E8D68C73D9}|DailyAPI\\DailyAPI.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapi\\controllers\\memocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{643A9528-905E-4BEF-8AD4-14E8D68C73D9}|DailyAPI\\DailyAPI.csproj|solutionrelative:dailyapi\\controllers\\memocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|d:\\software\\develop\\net\\project\\dailyapp\\dailyapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4005EF56-54D5-4373-9AD3-C2CAFD3A3784}|DailyApp\\DailyApp.csproj|solutionrelative:dailyapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,78 +41,92 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWin.xaml",
-              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\MainWin.xaml",
-              "RelativeDocumentMoniker": "DailyApp\\Views\\MainWin.xaml",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\MainWin.xaml",
-              "RelativeToolTip": "DailyApp\\Views\\MainWin.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T10:50:25.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginUC.xaml.cs",
-              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\LoginUC.xaml.cs",
-              "RelativeDocumentMoniker": "DailyApp\\Views\\LoginUC.xaml.cs",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\LoginUC.xaml.cs",
-              "RelativeToolTip": "DailyApp\\Views\\LoginUC.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:32:41.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginUC.xaml",
-              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\LoginUC.xaml",
-              "RelativeDocumentMoniker": "DailyApp\\Views\\LoginUC.xaml",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\LoginUC.xaml",
-              "RelativeToolTip": "DailyApp\\Views\\LoginUC.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T10:30:56.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MemoController.cs",
-              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyAPI\\Controllers\\MemoController.cs",
-              "RelativeDocumentMoniker": "DailyAPI\\Controllers\\MemoController.cs",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyAPI\\Controllers\\MemoController.cs",
-              "RelativeToolTip": "DailyAPI\\Controllers\\MemoController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAUwG8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:20:53.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HomeUC.xaml",
               "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\HomeUC.xaml",
               "RelativeDocumentMoniker": "DailyApp\\Views\\HomeUC.xaml",
               "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\HomeUC.xaml",
               "RelativeToolTip": "DailyApp\\Views\\HomeUC.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T09:07:47.373Z"
+              "WhenOpened": "2025-10-17T09:36:19.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeUCViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\HomeUCViewModel.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAASwHUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:19:36.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWinViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\MainWinViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\MainWinViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\MainWinViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\MainWinViewModel.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAvwEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:19:36.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonalUC.xaml",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\PersonalUC.xaml",
+              "RelativeDocumentMoniker": "DailyApp\\Views\\PersonalUC.xaml",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\PersonalUC.xaml",
+              "RelativeToolTip": "DailyApp\\Views\\PersonalUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T08:58:59.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "DailyApp\\App.xaml.cs",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\App.xaml.cs",
-              "RelativeToolTip": "DailyApp\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAlAAAAAAAAAA==",
+              "Title": "SettingUC.xaml",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\SettingUC.xaml",
+              "RelativeDocumentMoniker": "DailyApp\\Views\\SettingUC.xaml",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\Views\\SettingUC.xaml",
+              "RelativeToolTip": "DailyApp\\Views\\SettingUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T08:58:07.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddWaitUCViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\Dialog\\AddWaitUCViewModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T12:51:38.792Z"
+              "WhenOpened": "2025-10-17T08:37:09.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WaitUCViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\WaitUCViewModel.cs",
+              "RelativeDocumentMoniker": "DailyApp\\ViewModels\\WaitUCViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\DailyApp\\DailyApp\\ViewModels\\WaitUCViewModel.cs",
+              "RelativeToolTip": "DailyApp\\ViewModels\\WaitUCViewModel.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAowJMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T08:05:25.533Z",
+              "EditorCaption": ""
             }
           ]
         }

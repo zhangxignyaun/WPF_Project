@@ -347,7 +347,7 @@
           }
         },
         "additionalProperties": false,
-        "description": "账号DTO,用来接收注册信息"
+        "description": "账号DTO,用来接收注册信息，git测试"
       },
       "MemoDTO": {
         "type": "object",
